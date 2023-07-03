@@ -2,13 +2,20 @@
 
 declare(script_types=1);
 
-namespace Willia\Td2;
+namespace Willi\Td2;
+
+use DateTime;
 
 class Api
 {
     public function getRandomNumber(): int
     {
-        return rand(0,100);
+        return rand(0, 100);
+    }
+
+    public function getDate(): \DateTime
+    {  
+        return new DateTime();
     }
 
 }
